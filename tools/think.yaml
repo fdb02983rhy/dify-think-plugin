@@ -2,8 +2,8 @@ identity:
   name: think
   author: kalochin
   label:
-    en_US: think
-    zh_Hans: think
+    en_US: Think
+    zh_Hans: 思考
 description:
   human:
     en_US: A tool that allows LLMs to think. It will not obtain new information or change any data, but just log the thought.
