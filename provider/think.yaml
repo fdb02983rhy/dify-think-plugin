@@ -1,0 +1,17 @@
+identity:
+  author: kalochin
+  name: think
+  label:
+    en_US: think
+    zh_Hans: think
+    pt_BR: think
+  description:
+    en_US: A &#34;tool&#34; allows LLMs to think.
+    zh_Hans: A &#34;tool&#34; allows LLMs to think.
+    pt_BR: A &#34;tool&#34; allows LLMs to think.
+  icon: icon.svg
+tools:
+  - tools/think.yaml
+extra:
+  python:
+    source: provider/think.py
