@@ -48,4 +48,4 @@ Domain-specific examples in your prompts significantly improve how effectively t
 
 Original concept by Anthropic  
 Tool author: [Kalo Chin](https://github.com/fdb02983rhy)  
-
+Repository: [https://github.com/fdb02983rhy/dify-think-plugin](https://github.com/fdb02983rhy/dify-think-plugin)
