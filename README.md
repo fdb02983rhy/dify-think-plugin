@@ -12,12 +12,47 @@ When using multiple tools or making multi-step decisions, AIs benefit from havin
 
 This tool is a simple implementation inspired by Anthropic's "think" tool research. For more information, please see: https://www.anthropic.com/engineering/claude-think-tool
 
-### Use Cases
+### Optimal Scenarios for Using the Think Tool
 
-- Analyzing outputs from other tools before taking action
-- Verifying compliance with complex policies and regulations
-- Planning multi-step sequences where mistakes are costly
-- Breaking down complex problems into manageable steps
+Research and testing have shown that the think tool provides significant advantages in several key scenarios:
+
+1. **Analysis of Tool Results**: Particularly valuable when the AI needs to carefully evaluate outputs from previous tool calls before proceeding, especially in situations where strategy adjustments may be necessary.
+
+2. **Regulatory and Guidelines Adherence**: Essential in contexts with strict policies or complex regulations that must be carefully followed and verified.
+
+3. **Multi-step Decision Processes**: Most beneficial in scenarios where actions build sequentially, with each decision affecting subsequent options and where errors could have cascading consequences.
+
+### Effective Implementation Strategies
+
+To maximize the benefits of the think tool in your Claude implementation:
+
+1. **Create Context-Specific Examples**
+   Develop tailored examples that demonstrate:
+   - Appropriate reasoning depth for your use case
+   - Techniques for deconstructing complex tasks
+   - Frameworks for addressing common scenarios
+   - Methods for ensuring comprehensive information gathering
+
+2. **Integrate Detailed Guidance in System Instructions**
+   For complex implementations, incorporate comprehensive think tool instructions within the system prompt rather than the tool description. This approach helps Claude better incorporate structured thinking into its overall problem-solving process.
+
+### Limitations and When to Skip the Think Tool
+
+The think tool does have limitations and isn't beneficial in all scenarios. Consider the additional token usage when deciding whether to implement it. The tool offers minimal benefits in:
+
+- **Simple or Parallel Tool Operations**: Use cases requiring only single tool calls or non-sequential multiple tool operations typically don't benefit from the additional reflection.
+
+- **Straightforward Task Execution**: Scenarios with minimal constraints or where Claude's standard reasoning is already sufficient for the task at hand.
+
+### Implementation Guide
+
+Incorporate the think tool into your Claude environment through these steps:
+
+1. **Begin with Complex Scenarios**: Identify challenging use cases where Claude currently experiences difficulties with policy compliance or complex reasoning chains.
+
+2. **Configure the Tool for Your Domain**: Implement a customized think tool specific to your needs, including relevant examples and use cases in your system instructions.
+
+3. **Evaluate and Adjust**: Observe how Claude utilizes the tool in real-world scenarios and refine your implementation to encourage more effective reasoning patterns.
 
 ### Maximizing Benefits with Proper Prompting
 
