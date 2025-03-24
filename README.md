@@ -1,30 +1,24 @@
-## Think Tool
+## Description
 
-**Author:** kalochin
-**Version:** 0.0.1
-**Type:** tool
+The "think" tool creates a dedicated space for LLMs to perform structured thinking during complex tasks. This tool enhances the LLM's problem-solving performance by providing a sandbox for reasoning through complex situations.
 
-### Description
-
-The "think" tool creates a dedicated space for AI assistants to perform structured thinking during complex tasks. This tool enhances the AI's problem-solving performance by providing a sandbox for reasoning through complex situations.
-
-When using multiple tools or making multi-step decisions, AIs benefit from having a place to analyze information, verify policy compliance, and plan sequential actions. The "think" tool provides this space without retrieving new information or changing any data - it simply logs the thought process.
+When using multiple tools or making multi-step decisions, LLMs benefit from having a place to analyze information, verify policy compliance, and plan sequential actions. The "think" tool provides this space without retrieving new information or changing any data - it simply logs the thought process.
 
 This tool is a simple implementation inspired by Anthropic's "think" tool research. For more information, please see: https://www.anthropic.com/engineering/claude-think-tool
 
-### Optimal Scenarios for Using the Think Tool
+## Optimal Scenarios for Using the Think Tool
 
 Research and testing have shown that the think tool provides significant advantages in several key scenarios:
 
-1. **Analysis of Tool Results**: Particularly valuable when the AI needs to carefully evaluate outputs from previous tool calls before proceeding, especially in situations where strategy adjustments may be necessary.
+1. **Analysis of Tool Results**: Particularly valuable when the LLM needs to carefully evaluate outputs from previous tool calls before proceeding, especially in situations where strategy adjustments may be necessary.
 
 2. **Regulatory and Guidelines Adherence**: Essential in contexts with strict policies or complex regulations that must be carefully followed and verified.
 
 3. **Multi-step Decision Processes**: Most beneficial in scenarios where actions build sequentially, with each decision affecting subsequent options and where errors could have cascading consequences.
 
-### Effective Implementation Strategies
+## Effective Implementation Strategies
 
-To maximize the benefits of the think tool in your Claude implementation:
+To maximize the benefits of the think tool in your LLM implementation:
 
 1. **Create Context-Specific Examples**
    Develop tailored examples that demonstrate:
@@ -34,27 +28,27 @@ To maximize the benefits of the think tool in your Claude implementation:
    - Methods for ensuring comprehensive information gathering
 
 2. **Integrate Detailed Guidance in System Instructions**
-   For complex implementations, incorporate comprehensive think tool instructions within the system prompt rather than the tool description. This approach helps Claude better incorporate structured thinking into its overall problem-solving process.
+   For complex implementations, incorporate comprehensive think tool instructions within the system prompt rather than the tool description. This approach helps the LLM better incorporate structured thinking into its overall problem-solving process.
 
-### Limitations and When to Skip the Think Tool
+## Limitations and When to Skip the Think Tool
 
 The think tool does have limitations and isn't beneficial in all scenarios. Consider the additional token usage when deciding whether to implement it. The tool offers minimal benefits in:
 
 - **Simple or Parallel Tool Operations**: Use cases requiring only single tool calls or non-sequential multiple tool operations typically don't benefit from the additional reflection.
 
-- **Straightforward Task Execution**: Scenarios with minimal constraints or where Claude's standard reasoning is already sufficient for the task at hand.
+- **Straightforward Task Execution**: Scenarios with minimal constraints or where the LLM's standard reasoning is already sufficient for the task at hand.
 
-### Implementation Guide
+## Implementation Guide
 
-Incorporate the think tool into your Claude environment through these steps:
+Incorporate the think tool into your LLM environment through these steps:
 
-1. **Begin with Complex Scenarios**: Identify challenging use cases where Claude currently experiences difficulties with policy compliance or complex reasoning chains.
+1. **Begin with Complex Scenarios**: Identify challenging use cases where the LLM currently experiences difficulties with policy compliance or complex reasoning chains.
 
 2. **Configure the Tool for Your Domain**: Implement a customized think tool specific to your needs, including relevant examples and use cases in your system instructions.
 
-3. **Evaluate and Adjust**: Observe how Claude utilizes the tool in real-world scenarios and refine your implementation to encourage more effective reasoning patterns.
+3. **Evaluate and Adjust**: Observe how the LLM utilizes the tool in real-world scenarios and refine your implementation to encourage more effective reasoning patterns.
 
-### Maximizing Benefits with Proper Prompting
+## Maximizing Benefits with Proper Prompting
 
 To get the most value from the think tool, consider adding specific instructions to your system prompt about when and how to use it:
 
@@ -77,14 +71,14 @@ User wants to [specific scenario]
 </think_tool_example_1>
 ```
 
-Domain-specific examples in your prompts significantly improve how effectively the AI uses the think tool. Consider including examples tailored to your specific use case.
+Domain-specific examples in your prompts significantly improve how effectively the LLM uses the think tool. Consider including examples tailored to your specific use case.
 
-### Credits
+## Credits
 
 Original concept by Anthropic  
 Tool author: [Kalo Chin](https://github.com/fdb02983rhy)  
 Repository: [https://github.com/fdb02983rhy/dify-think-plugin](https://github.com/fdb02983rhy/dify-think-plugin)
 
-### License
+## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.

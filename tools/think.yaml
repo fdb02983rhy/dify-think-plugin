@@ -8,7 +8,7 @@ description:
   human:
     en_US: A tool that allows LLMs to think. It will not obtain new information or change any data, but just log the thought.
     zh_Hans: 一个允许LLM思考的工具。它不会获取新信息或更改任何数据，只会记录思考过程。
-  llm: Use this tool to think about something. It will not obtain new information or change any data, but just log the thought. Use it when complex reasoning or some cache memory is needed.
+  llm: Use the tool to think about something. It will not obtain new information or change the database, but just append the thought to the log. Use it when complex reasoning or some cache memory is needed.
 parameters:
   - name: thought
     type: string
@@ -19,7 +19,7 @@ parameters:
     human_description:
       en_US: A thought to think about.
       zh_Hans: 需要思考的内容。
-    llm_description: A thought to think about. Use this for complex reasoning, analyzing tool outputs, checking policy compliance, or planning multi-step actions.
+    llm_description: A thought to think about.
     form: llm
 extra:
   python:

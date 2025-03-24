@@ -1,4 +1,4 @@
-version: 0.0.1
+version: 0.0.2
 type: plugin
 author: kalochin
 name: think
@@ -10,7 +10,7 @@ description:
   zh_Hans: 一个通过逐步推理帮助非推理模型有条理地解决问题的工具。
 icon: icon.svg
 resource:
-  memory: 268435456
+  memory: 1048576
   permission:
     model:
       enabled: true
